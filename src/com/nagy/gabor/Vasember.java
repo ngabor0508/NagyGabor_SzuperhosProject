@@ -8,7 +8,12 @@ public class Vasember extends Bosszuallo implements Milliardos{
 
     @Override
     public boolean megmentiAVilagot() {
-        return false;
+        if(this.getSzuperero() > 1000){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override
