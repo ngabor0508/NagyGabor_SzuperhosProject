@@ -10,12 +10,17 @@ public class Batman implements Szuperhos, Milliardos{
 
     @Override
     public void kutyutKeszit() {
-
+        this.lelemenyesseg += 50;
     }
 
     @Override
     public boolean legyzoziE(Szuperhos s) {
-        return false;
+       if (s.mekkoraAzEreje() < this.lelemenyesseg){
+           return true;
+       }
+       else{
+           return false;
+       }
     }
 
     @Override
